@@ -1,3 +1,10 @@
+"""
+This script creates an agent that can summarize a PDF file using CrewAI the PDFSearchTool.
+
+Resources:
+https://docs.crewai.com/en/tools/file-document/pdfsearchtool#pdf-rag-search
+"""
+
 from crewai import Agent, Crew, Task
 from crewai_tools import PDFSearchTool
 
