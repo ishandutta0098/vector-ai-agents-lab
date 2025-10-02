@@ -55,20 +55,6 @@ This project uses [uv](https://docs.astral.sh/uv/) as a package manager for fast
    uv run crewai_scrape.py
    ```
 
-## Project Structure
-
-```
-vector-ai-agents-lab/
-├── src/
-│   ├── beginner/
-│   │   └── website_scraper/
-│   │       └── crewai_scrape.py
-│   └── ...
-├── pyproject.toml
-├── uv.lock
-└── README.md
-```
-
 ## Usage
 
 ### Running Scripts
