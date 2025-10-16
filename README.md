@@ -1,20 +1,23 @@
 # Vector: AI Agents Lab
 
-<h2 align="center">💖 Sponsored By</h2>
+Vector is an AI Agents Lab developed for people willing to learn how to build AI Agents.  
 
-<p align="center">
-  <a href="https://www.outskill.com/" target="_blank">
-    <img src="https://img.shields.io/static/v1?label=&message=OUTSKILL&color=95FF00&style=for-the-badge&labelColor=1C1C1C" alt="Outskill" />
+---
+
+## Sponsored By:
+<p style="display: flex; align-items: center; gap: 8px;">
+  <a href="https://www.outskill.com/" target="_blank" style="line-height: 0;">
+    <img src="https://img.shields.io/static/v1?label=&message=OUTSKILL&color=95FF00&style=for-the-badge&labelColor=1C1C1C" alt="Outskill" height="28">
   </a>
-  <a href="https://deepstation.ai/" target="_blank">
-    <img src="https://img.shields.io/static/v1?label=&message=DEEPSTATION&color=5E17EB&style=for-the-badge&labelColor=0B0033" alt="DeepStation" />
+  <a href="https://deepstation.ai/" target="_blank" style="line-height: 0;">
+    <img src="https://img.shields.io/static/v1?label=&message=DEEPSTATION&color=5E17EB&style=for-the-badge&labelColor=0B0033" alt="DeepStation" height="28">
   </a>
 </p>
 
-
+---
 
 ## Project Overview
-Vector is an AI Agents Lab developed for people willing to learn how to build AI Agents.  
+
   
 The projects in Vector are divided into 3 categories based on their complexity - 
 1. `src/beginner` -
