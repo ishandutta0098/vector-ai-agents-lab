@@ -1,10 +1,13 @@
 import os
+from pathlib import Path
 
 from agents import issue_investigator, log_analyzer, solution_specialist
 from crewai import Crew, Process
 from tasks import analyze_logs_task, investigate_issue_task, provide_solution_task
 
-os.environ["CREWAI_STORAGE_DIR"] = "src/intermediate/devops/crewai_memory"
+memory_dir = Path(__file__).parent / "crewai_memory"
+memory_dir.mkdir(exist_ok=True)
+os.environ["CREWAI_STORAGE_DIR"] = str(memory_dir.absolute())
 
 # Enhanced DevOps crew with advanced configuration
 devops_crew = Crew(
@@ -29,11 +32,11 @@ if __name__ == "__main__":
     )
 
     # Scenario 2: Analyze database connection error
-    print("\n📋 Scenario 2: Database Connection Analysis")
-    result = devops_crew.kickoff(
-        inputs={
-            "log_file_path": "src/intermediate/devops/logs/database_connection_error.txt"
-        }
-    )
+    # print("\n📋 Scenario 2: Database Connection Analysis")
+    # result = devops_crew.kickoff(
+    #     inputs={
+    #         "log_file_path": "src/intermediate/devops/logs/database_connection_error.txt"
+    #     }
+    # )
 
     print("\n🎉 DevOps analysis completed!")
