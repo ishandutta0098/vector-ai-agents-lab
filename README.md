@@ -1,5 +1,18 @@
 # Vector: AI Agents Lab
 
+<h2 align="center">💖 Sponsored By</h2>
+
+<p align="center">
+  <a href="https://www.outskill.com/" target="_blank">
+    <img src="https://img.shields.io/static/v1?label=&message=OUTSKILL&color=95FF00&style=for-the-badge&labelColor=1C1C1C" alt="Outskill" />
+  </a>
+  <a href="https://deepstation.ai/" target="_blank">
+    <img src="https://img.shields.io/static/v1?label=&message=DEEPSTATION&color=5E17EB&style=for-the-badge&labelColor=0B0033" alt="DeepStation" />
+  </a>
+</p>
+
+
+
 ## Project Overview
 Vector is an AI Agents Lab developed for people willing to learn how to build AI Agents.  
   
@@ -51,8 +64,7 @@ This project uses [uv](https://docs.astral.sh/uv/) as a package manager for fast
 
 4. **Run a script**  
    ```bash
-   cd src/beginner/website_scraper
-   uv run crewai_scrape.py
+   uv run src/beginner/website_scraper/crewai_scrape.py
    ```
 
 ## Usage
