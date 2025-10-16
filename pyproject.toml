@@ -6,8 +6,8 @@ readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
     "black>=25.9.0",
-    "crewai>=0.201.1",
-    "crewai_tools",
+    "crewai==0.148.0",
+    "crewai_tools==0.17.0",
     "exa-py>=1.16.1",
     "fastapi>=0.119.0",
     "isort>=6.0.1",
