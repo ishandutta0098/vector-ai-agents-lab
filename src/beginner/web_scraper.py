@@ -5,8 +5,21 @@ Resources:
 https://docs.crewai.com/en/tools/web-scraping/scrapewebsitetool
 """
 
+import os
+from pathlib import Path
+
 from crewai import Agent, Crew, Task
 from crewai_tools import ScrapeWebsiteTool
+from dotenv import load_dotenv
+
+load_dotenv()
+
+os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+
+# Get absolute path for memory directory
+memory_dir = Path(__file__).parent / "crewai_memory"
+memory_dir.mkdir(exist_ok=True)
+os.environ["CREWAI_STORAGE_DIR"] = str(memory_dir.absolute())
 
 
 def create_agent(website_url: str) -> Agent:
@@ -26,11 +39,12 @@ def create_agent(website_url: str) -> Agent:
         backstory="You are a helpful assistant that scrapes websites",
         verbose=True,
         llm="gpt-4o-mini",
-        max_iter=1,
+        max_iter=2,
         max_retry_limit=2,
         respect_context_window=True,
         reasoning=False,
         tools=[scrape_website_tool],
+        memory=True,
     )
 
     return agent
@@ -75,6 +89,7 @@ def create_crew(agent: Agent, task: Task) -> Crew:
         agents=[agent],
         tasks=[task],
         verbose=True,
+        memory=True,
     )
 
     return crew
