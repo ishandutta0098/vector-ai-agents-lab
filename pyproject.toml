@@ -8,6 +8,7 @@ dependencies = [
     "black>=25.9.0",
     "crewai>=0.201.1",
     "crewai_tools",
+    "exa-py>=1.16.1",
     "isort>=6.0.1",
     "ruff>=0.13.2",
 ]

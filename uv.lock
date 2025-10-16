@@ -753,6 +753,24 @@ wheels = [
 ]
 
 [[package]]
+name = "exa-py"
+version = "1.16.1"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "httpcore" },
+    { name = "httpx" },
+    { name = "openai" },
+    { name = "pydantic" },
+    { name = "python-dotenv" },
+    { name = "requests" },
+    { name = "typing-extensions" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/77/15/abbe4361f42416c1741d252821bdfffe0e1ad9b39655b04db417b79b0d55/exa_py-1.16.1.tar.gz", hash = "sha256:3cb371b8efd321881a8217070f16afdac5afbaa9229177f80d5c427e1a6dbd59", size = 41364, upload-time = "2025-10-09T21:09:08.23Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/95/28/5b871e0ac1b76e560f75226f70897cb3e7cb66022cfb58507d0e7d6217ca/exa_py-1.16.1-py3-none-any.whl", hash = "sha256:3b323ed32725b72110720306ea12da09161cfa9c8ac64797a9c0b66869741f27", size = 56631, upload-time = "2025-10-09T21:09:07.099Z" },
+]
+
+[[package]]
 name = "executing"
 version = "2.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -3662,6 +3680,7 @@ dependencies = [
     { name = "black" },
     { name = "crewai" },
     { name = "crewai-tools" },
+    { name = "exa-py" },
     { name = "isort" },
     { name = "ruff" },
 ]
@@ -3671,6 +3690,7 @@ requires-dist = [
     { name = "black", specifier = ">=25.9.0" },
     { name = "crewai", specifier = ">=0.201.1" },
     { name = "crewai-tools" },
+    { name = "exa-py", specifier = ">=1.16.1" },
     { name = "isort", specifier = ">=6.0.1" },
     { name = "ruff", specifier = ">=0.13.2" },
 ]
