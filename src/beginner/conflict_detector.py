@@ -3,7 +3,6 @@ This script creates an agent that can detect conflicts in a text using CrewAI.
 """
 
 import os
-from pickle import FALSE
 
 from crewai import Agent, Crew, Task
 from crewai.llm import LLM
@@ -13,6 +12,7 @@ load_dotenv()
 
 # Create an instance of OpenAI's LLM
 os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+
 
 def create_agent() -> Agent:
     """
