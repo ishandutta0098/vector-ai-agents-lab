@@ -1,0 +1,21 @@
+2024-10-10T14:32:15.123Z [INFO] Starting deployment of myapp:v1.2.3
+2024-10-10T14:32:15.456Z [INFO] Applying deployment configuration...
+2024-10-10T14:32:15.789Z [INFO] Creating deployment myapp-deployment in namespace production
+2024-10-10T14:32:16.012Z [INFO] Deployment created successfully
+2024-10-10T14:32:16.234Z [INFO] Waiting for pods to be ready...
+2024-10-10T14:32:16.567Z [WARNING] Pod myapp-deployment-7b8c9d5f4-abc12 is in Pending state
+2024-10-10T14:32:17.890Z [ERROR] Pod myapp-deployment-7b8c9d5f4-abc12 failed to start
+2024-10-10T14:32:18.123Z [ERROR] Event: Failed to pull image "myapp:v1.2.3": rpc error: code = Unknown desc = Error response from daemon: pull access denied for myapp, repository does not exist or may require 'docker login'
+2024-10-10T14:32:18.456Z [ERROR] Pod myapp-deployment-7b8c9d5f4-abc12 status: ImagePullBackOff
+2024-10-10T14:32:19.789Z [WARNING] Back-off pulling image "myapp:v1.2.3"
+2024-10-10T14:32:20.012Z [ERROR] kubelet: Failed to pull image "myapp:v1.2.3": rpc error: code = Unknown desc = Error response from daemon: pull access denied for myapp, repository does not exist or may require 'docker login'
+2024-10-10T14:32:21.345Z [ERROR] kubelet: Error syncing pod: ErrImagePull
+2024-10-10T14:32:22.678Z [WARNING] Pod myapp-deployment-7b8c9d5f4-abc12 has been in ImagePullBackOff state for 5 seconds
+2024-10-10T14:32:25.901Z [ERROR] Deployment rollout failed: deployment "myapp-deployment" exceeded its progress deadline
+2024-10-10T14:32:26.234Z [ERROR] ReplicaSet myapp-deployment-7b8c9d5f4 has 0 ready replicas out of 3 desired
+2024-10-10T14:32:26.567Z [INFO] Current deployment status: 0/3 pods ready
+2024-10-10T14:32:27.890Z [WARNING] Deployment health check failed: no healthy pods found
+2024-10-10T14:32:28.123Z [ERROR] Service myapp-service has no available endpoints
+2024-10-10T14:32:29.456Z [CRITICAL] Production deployment failed - rollback initiated
+2024-10-10T14:32:30.789Z [INFO] Rolling back to previous version myapp:v1.2.2
+2024-10-10T14:32:31.012Z [INFO] Rollback completed successfully

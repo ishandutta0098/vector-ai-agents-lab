@@ -1,0 +1,24 @@
+2024-10-10T09:15:23.456Z [INFO] Application startup initiated
+2024-10-10T09:15:23.789Z [INFO] Loading configuration from /app/config/production.yaml
+2024-10-10T09:15:24.012Z [INFO] Initializing database connection pool
+2024-10-10T09:15:24.345Z [INFO] Database host: postgres-prod.cluster-xyz.us-west-2.rds.amazonaws.com:5432
+2024-10-10T09:15:24.678Z [INFO] Database name: ecommerce_prod
+2024-10-10T09:15:24.901Z [INFO] Connection pool size: 20
+2024-10-10T09:15:25.234Z [WARNING] Attempting to connect to database...
+2024-10-10T09:15:30.567Z [ERROR] Database connection failed: connection to server at "postgres-prod.cluster-xyz.us-west-2.rds.amazonaws.com" (10.0.1.45), port 5432 failed: FATAL: password authentication failed for user "app_user"
+2024-10-10T09:15:30.890Z [ERROR] Connection attempt 1/5 failed, retrying in 5 seconds...
+2024-10-10T09:15:35.123Z [ERROR] Database connection failed: connection to server at "postgres-prod.cluster-xyz.us-west-2.rds.amazonaws.com" (10.0.1.45), port 5432 failed: FATAL: password authentication failed for user "app_user"
+2024-10-10T09:15:35.456Z [ERROR] Connection attempt 2/5 failed, retrying in 10 seconds...
+2024-10-10T09:15:45.789Z [ERROR] Database connection failed: connection to server at "postgres-prod.cluster-xyz.us-west-2.rds.amazonaws.com" (10.0.1.45), port 5432 failed: FATAL: password authentication failed for user "app_user"
+2024-10-10T09:15:45.012Z [ERROR] Connection attempt 3/5 failed, retrying in 15 seconds...
+2024-10-10T09:16:00.345Z [ERROR] Database connection failed: connection to server at "postgres-prod.cluster-xyz.us-west-2.rds.amazonaws.com" (10.0.1.45), port 5432 failed: FATAL: password authentication failed for user "app_user"
+2024-10-10T09:16:00.678Z [ERROR] Connection attempt 4/5 failed, retrying in 20 seconds...
+2024-10-10T09:16:20.901Z [ERROR] Database connection failed: connection to server at "postgres-prod.cluster-xyz.us-west-2.rds.amazonaws.com" (10.0.1.45), port 5432 failed: FATAL: password authentication failed for user "app_user"
+2024-10-10T09:16:21.234Z [CRITICAL] All database connection attempts failed (5/5)
+2024-10-10T09:16:21.567Z [ERROR] Unable to initialize application: database connection pool creation failed
+2024-10-10T09:16:21.890Z [ERROR] Health check endpoint returning 503 Service Unavailable
+2024-10-10T09:16:22.123Z [WARNING] Load balancer detecting unhealthy instances
+2024-10-10T09:16:22.456Z [ERROR] Application startup failed - exiting with code 1
+2024-10-10T09:16:22.789Z [INFO] Cleanup initiated
+2024-10-10T09:16:23.012Z [INFO] Closing existing connections...
+2024-10-10T09:16:23.345Z [INFO] Application shutdown complete
