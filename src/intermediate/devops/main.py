@@ -30,6 +30,10 @@ if __name__ == "__main__":
 
     # Scenario 2: Analyze database connection error
     print("\n📋 Scenario 2: Database Connection Analysis")
-    result = devops_crew.kickoff(inputs={"log_file_path": "src/intermediate/devops/logs/database_connection_error.txt"})
+    result = devops_crew.kickoff(
+        inputs={
+            "log_file_path": "src/intermediate/devops/logs/database_connection_error.txt"
+        }
+    )
 
     print("\n🎉 DevOps analysis completed!")
