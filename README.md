@@ -67,7 +67,7 @@ This project uses [uv](https://docs.astral.sh/uv/) as a package manager for fast
 
 4. **Run a script**  
    ```bash
-   uv run src/beginner/website_scraper/crewai_scrape.py
+   uv run src/beginner/pdf_summarizer.py
    ```
 
 ## Usage
