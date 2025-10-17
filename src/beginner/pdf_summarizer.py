@@ -88,7 +88,7 @@ def create_crew(agent: Agent, task: Task) -> Crew:
 def main():
     agent = create_agent(
         query="What is the main idea of the paper?",
-        pdf_path="../../../assets/transformers.pdf",
+        pdf_path="assets/transformers.pdf",
     )
     task = create_task(agent)
     crew = create_crew(agent, task)
